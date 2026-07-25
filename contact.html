@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NexusSaaS</title>
+    <meta name="description" content="Get in touch with the NexusSaaS team. We're here to help you streamline your workflows and scale your business.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://nexussaas.example.com/contact.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact Us | NexusSaaS">
+    <meta property="og:description" content="Get in touch with the NexusSaaS team. We're here to help you.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nexussaas.example.com/contact.html">
+    <meta property="og:image" content="https://nexussaas.example.com/assets/images/contact-og.webp">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | NexusSaaS">
+    <meta name="twitter:description" content="Get in touch with the NexusSaaS team.">
+    
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    
+    <!-- Schema.org ContactPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "NexusSaaS Contact Support",
+      "url": "https://nexussaas.example.com/contact.html",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "NexusSaaS",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-800-555-0199",
+          "contactType": "customer service",
+          "email": "support@nexussaas.example.com"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="NexusSaaS Home">Nexus<span class="text-accent">SaaS</span></a>
+            
+            <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="product.html" class="nav-link">Product</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-secondary">Log In</a>
+                    <a href="pricing.html" class="btn btn-primary">Start Free Trial</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-header text-center section-padding bg-light">
+            <div class="container">
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-subtitle">Have questions about our product, pricing, or enterprise solutions? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container grid grid-2">
+                <div class="contact-info">
+                    <h2 class="section-title">Let's Talk</h2>
+                    <p class="section-desc">Fill out the form and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-method">
+                            <strong>Email</strong>
+                            <p><a href="mailto:hello@nexussaas.example.com">hello@nexussaas.example.com</a></p>
+                        </div>
+                        <div class="contact-method">
+                            <strong>Phone</strong>
+                            <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                        </div>
+                        <div class="contact-method">
+                            <strong>Office</strong>
+                            <address>123 Innovation Drive<br>Suite 400<br>San Francisco, CA 94105</address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <!-- Form simulation, action points nowhere, JS prevents default for demo -->
+                    <form class="contact-form" id="contactForm" aria-label="Contact Us Form">
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" placeholder="john@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Acme Corp">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How can we help? <span class="required" aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Tell us about your needs..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        
+                        <!-- Success message hidden by default -->
+                        <div id="formSuccess" class="form-success" role="alert" hidden>
+                            Thanks for reaching out! We will get back to you shortly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Nexus<span class="text-accent">SaaS</span></a>
+                    <p class="footer-desc">Empowering businesses with intelligent automation.</p>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Product</h3>
+                    <ul>
+                        <li><a href="product.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexusSaaS. All rights reserved.</p>
+                <!-- MANDATORY CREDIT LINE -->
+                <p class="credit-line">Built for Digital Heroes Training Task <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer">digitalheroesco.com</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
